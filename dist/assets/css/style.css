@@ -405,6 +405,11 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
     color: var(--form-text);
 }
 
+.form-text {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
 .form-group {
     margin-bottom: 1.25rem;
 }

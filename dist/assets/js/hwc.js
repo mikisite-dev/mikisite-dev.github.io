@@ -9,7 +9,7 @@
    { href: 'akustik.html', src: './assets/img/akustik-kontor.webp', caption: 'Akustikregulering' },
    { href: 'intranet.html', src: './assets/img/intranet-dashboard.png', caption: 'Intranet' },
    { href: 'betaling.html', src: './assets/img/betalingsløsninger.jpeg', caption: 'Betalingsløsninger & Terminaler' },
-   { href: 'web.html', src: './assets/img/webshop-dashboard.jpg', caption: 'Hjemmesider & Webshops' },
+   { href: 'web.html', src: './assets/img/hjemmesider1.jpeg', caption: 'Hjemmesider & Webshops' },
    { href: 'myselfie.html', src: './assets/img/myselfie-carousel.jpg', caption: 'Myselfie' }
       ];
       var start = 0, timer;
