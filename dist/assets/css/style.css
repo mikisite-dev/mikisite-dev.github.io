@@ -131,7 +131,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .si { border-radius: 12px; overflow: hidden; border: 1px solid var(--mid); background: var(--ice); display: flex; align-items: center; justify-content: center; min-height: 280px; }
 .si img { max-width: 100%; max-height: 320px; object-fit: contain; padding: 20px; }
 .si.cover img { width: 100%; height: 320px; object-fit: cover; padding: 0; }
-.st h2 { font-family: 'DM Serif Display', serif; font-size: 26px; margin-bottom: 14px; line-height: 1.3; color: var(--dark); }
+.st h2 { font-family: serif; font-size: 26px; margin-bottom: 14px; line-height: 1.3; color: var(--dark); }
 .st p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 14px; }
 .check-list { list-style: none; margin-bottom: 24px; }
 .check-list li { font-size: 14.5px; color: var(--text); padding: 7px 0 7px 22px; position: relative; border-bottom: 1px solid var(--ice); }
@@ -235,7 +235,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .brand-strip { padding: 56px 40px; background: var(--ice); text-align: center; }
 .brand-strip h3 { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
 .brand-pills { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
-.brand-pill { background: var(--white); border: 1px solid var(--mid); border-radius: 40px; padding: 10px 26px; font-family: 'DM Serif Display', serif; font-size: 17px; color: var(--dark); }
+.brand-pill { background: var(--white); border: 1px solid var(--mid); border-radius: 40px; padding: 10px 26px; font-family: serif; font-size: 17px; color: var(--dark); }
 .brand-strip p { font-size: 14px; color: var(--muted); max-width: 620px; margin: 0 auto; line-height: 1.7; }
 
 /* --- videowrap --- */
@@ -249,8 +249,8 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .price-card.featured { border: 2px solid var(--blue); position: relative; }
 .price-badge { position: absolute; top: -12px; left: 22px; background: var(--blue); color: #fff; font-size: 10.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 4px 12px; border-radius: 3px; }
 .price-card h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
-.price-amount { font-family: 'DM Serif Display', serif; font-size: 30px; color: var(--blue); margin-bottom: 4px; }
-.price-amount span { font-size: 13px; color: var(--muted); font-family: 'DM Sans', sans-serif; font-weight: 400; }
+.price-amount { font-family: serif; font-size: 30px; color: var(--blue); margin-bottom: 4px; }
+.price-amount span { font-size: 13px; color: var(--muted); font-family: sans-serif; font-weight: 400; }
 .price-card .price-lead { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; min-height: 38px; }
 .price-list { list-style: none; margin-bottom: 20px; flex-grow: 1; }
 .price-list li { font-size: 12.5px; color: var(--text); padding: 5px 0 5px 18px; position: relative; line-height: 1.5; }
@@ -263,7 +263,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
     justify-content: center;}
 .book-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; max-width: 1080px; align-items: flex-start; }
 .book-info .section-tag { color: var(--sky); }
-.book-info h2 { font-family: 'DM Serif Display', serif; font-size: 28px; color: #fff; margin-bottom: 16px; line-height: 1.3; }
+.book-info h2 { font-family: serif; font-size: 28px; color: #fff; margin-bottom: 16px; line-height: 1.3; }
 .book-info p { font-size: 14.5px; color: rgba(255,255,255,.65); line-height: 1.8; margin-bottom: 16px; }
 .book-steps { list-style: none; counter-reset: step; margin-top: 20px; }
 .book-steps li { counter-increment: step; font-size: 13.5px; color: rgba(255,255,255,.75); padding: 8px 0 8px 34px; position: relative; border-bottom: 1px solid rgba(255,255,255,.1); }
@@ -272,7 +272,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .book-form { background: var(--white); border-radius: 14px; padding: 32px; }
 .form-row { margin-bottom: 16px; }
 .form-row label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 6px; }
-.form-row input, .form-row select, .form-row textarea { width: 100%; padding: 11px 14px; font-size: 14px; font-family: 'DM Sans', sans-serif; border: 1px solid var(--mid); border-radius: 6px; color: var(--text); background: var(--light); }
+.form-row input, .form-row select, .form-row textarea { width: 100%; padding: 11px 14px; font-size: 14px; border: 1px solid var(--mid); border-radius: 6px; color: var(--text); background: var(--light); }
 .form-row input:focus, .form-row select:focus, .form-row textarea:focus { outline: none; border-color: var(--blue); background: var(--white); }
 .form-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-row textarea { resize: vertical; min-height: 80px; }
@@ -287,6 +287,7 @@ input[type="date"] {
     min-width: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    min-height: 40px;
 }
 
 /* ── CTA BAND ── */
