@@ -280,8 +280,11 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .form-note { font-size: 11.5px; color: var(--muted); margin-top: 12px; line-height: 1.6; }
 
 input[type="date"] {
-    min-width: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
     max-width: 100%;
+    min-width: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
