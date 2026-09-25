@@ -32,11 +32,11 @@
 </div>
 
 <nav class="navbar">
-  <a href="index.html" style="text-decoration:none; display:flex; align-items:center;">
-    <img class="logo-img" src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" style="height:52px;" onerror="this.style.display='none'">
+  <a href="index.html" class="text-decoration-none display-flex align-items-center">
+    <img class="logo-img" src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
     <span class="logo-text">Arctic Print Solutions</span>
   </a>
-  <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+  <button class="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links">
@@ -105,7 +105,7 @@
         <li>Online galleri i 30 dage</li>
         <li>Billeder klar når enheden returneres</li>
       </ul>
-      <button class="btn-outline-blue" onclick="bookPackage('Gør det selv')">Book Her</button>
+      <a href="#book" class="btn-outline-blue" >Book Her</a>
     </div>
     <div class="price-card featured">
       <span class="price-badge">Populær</span>
@@ -118,7 +118,7 @@
         <li>Online galleri i 30 dage</li>
         <li>Download med det samme, hvis der er WiFi</li>
       </ul>
-      <button class="btn-blue" onclick="bookPackage('Opsætning inkluderet')">Book Her</button>
+      <a href="#book" class="btn-blue">Book Her</a>
     </div>
     <div class="price-card">
       <h3>Alt inklusive</h3>
@@ -130,7 +130,7 @@
         <li>Online galleri i 30 dage</li>
         <li>Inkl. WiFi-router til øjeblikkelig download</li>
       </ul>
-      <button class="btn-outline-blue" onclick="bookPackage('Alt inklusive')">Book Her</button>
+      <a href="#book" class="btn-outline-blue">Book Her</a>
     </div>
     <div class="price-card">
       <h3>Premium</h3>
@@ -142,7 +142,7 @@
         <li>Online galleri i 30 dage</li>
         <li>Eget logo eller ramme på billederne</li>
       </ul>
-      <button class="btn-outline-blue" onclick="bookPackage('Premium')">Book Her</button>
+      <a href="#book" class="btn-outline-blue">Book Her</a>
     </div>
   </div>
   <p class="note-box">Skal I leje i flere dage, eller er arrangementet uden for Nuuk? Skriv det i beskeden i bookingformularen, så finder vi en løsning.</p>
@@ -161,50 +161,54 @@
         <li>Betalingsoplysninger sendes i bekræftelsesmailen</li>
         <li>Booking er endelig, når betalingen er registreret</li>
       </ol>
-      <p style="margin-top:20px;">Spørgsmål? Kontakt os på <a href="mailto:myselfie@arcticprint.gl" style="color:var(--sky);">myselfie@arcticprint.gl</a></p>
+      <p class="mt-28">Spørgsmål? Kontakt os på <a href="mailto:myselfie@arcticprint.gl" class="text-color-sky">myselfie@arcticprint.gl</a></p>
     </div>
     <div class="book-form">
-      <form id="myselfie-booking-form" onsubmit="sendBooking(event)">
-        <div class="form-2col">
-          <div class="form-row">
-            <label for="b-navn">Navn</label>
-            <input type="text" id="b-navn" required>
-          </div>
-          <div class="form-row">
-            <label for="b-tlf">Telefon nr.</label>
-            <input type="tel" id="b-tlf" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <label for="b-email">Email</label>
-          <input type="email" id="b-email" required>
-        </div>
-        <div class="form-2col">
-          <div class="form-row">
-            <label for="b-dato">Hvilken dag vil I booke?</label>
-            <input type="date" id="b-dato" required>
-          </div>
-          <div class="form-row">
-            <label for="b-type">Hvilken pakke?</label>
-            <select id="b-type">
-              <option>Gør det selv</option>
-              <option selected>Opsætning inkluderet</option>
-              <option>Alt inklusive</option>
-              <option>Premium</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <label for="b-lokation">Lokation</label>
-          <input type="text" id="b-lokation" placeholder="Fx Hans Egede Hallen, Nuuk">
-        </div>
-        <div class="form-row">
-          <label for="b-besked">Andet du vil sige?</label>
-          <textarea id="b-besked" placeholder="Fx flere dages leje, ønsker uden for Nuuk, eller andre ønsker"></textarea>
-        </div>
-        <button type="submit" class="btn-blue form-submit">Send booking</button>
-        <p class="form-note">Din mailapp åbner med en udfyldt besked til myselfie@arcticprint.gl — tryk send for at fuldføre din booking-forespørgsel. Booking er først bekræftet, når I har modtaget svar fra os.</p>
-      </form>
+    <!-- myselfie booking -->
+      <form action="https://formspree.io/f/xyeylvvd" method="POST">
+  <div class="form-2col">
+    <div class="form-row">
+      <label for="b-navn">Navn</label>
+      <input type="text" id="b-navn" name="name" required>
+    </div>
+    <div class="form-row">
+      <label for="b-tlf">Telefon nr.</label>
+      <input type="tel" id="b-tlf" name="telefon" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <label for="b-email">Email</label>
+    <input type="email" id="b-email" name="email" required>
+  </div>
+  <div class="form-2col">
+    <div class="form-row">
+      <label for="b-dato">Hvilken dag vil I booke?</label>
+      <input type="date" id="b-dato" name="dato" required>
+    </div>
+    <div class="form-row">
+      <label for="b-type">Hvilken pakke?</label>
+      <select id="b-type" name="pakke">
+        <option>Gør det selv</option>
+        <option selected>Opsætning inkluderet</option>
+        <option>Alt inklusive</option>
+        <option>Premium</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <label for="b-lokation">Lokation</label>
+    <input type="text" id="b-lokation" name="lokation" placeholder="Fx Hans Egede Hallen, Nuuk">
+  </div>
+  <div class="form-row">
+    <label for="b-besked">Andet du vil sige?</label>
+    <textarea id="b-besked" name="message" placeholder="Fx flere dages leje, ønsker uden for Nuuk, eller andre ønsker"></textarea>
+  </div>
+  <input type="hidden" name="_subject" value="Ny booking – MySelfie">
+  <input class="display-none" type="hidden" name="_language" value="da" />
+  <input type="text" name="_gotcha" class="display-none" />
+  <button type="submit" class="btn-blue form-submit">Send booking</button>
+  <p class="form-note">Vi vender tilbage hurtigst muligt for at bekræfte din booking.</p>
+</form>
     </div>
   </div>
 </section>
@@ -226,20 +230,28 @@
     <div>
       <p class="section-tag">Kontakt</p>
       <h2 class="section-title">Vi er klar til at hjælpe</h2>
-      <p style="font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:28px;">Ring, skriv eller kig forbi vores showroom i Qinngorput — vi vender hurtigt tilbage.</p>
+      <p class="contact-text-style">Ring, skriv eller kig forbi vores showroom i Qinngorput — vi vender hurtigt tilbage.</p>
       <div class="c-row"><div class="c-icon">📍</div><div><strong>Adresse</strong><span>Naternaq 28 (Qinngorput), Postboks 1629, 3900 Nuuk</span></div></div>
       <div class="c-row"><div class="c-icon">📞</div><div><strong>Telefon</strong><a href="tel:+299388010">+299 38 80 10</a></div></div>
       <div class="c-row"><div class="c-icon">✉️</div><div><strong>Salg</strong><a href="mailto:salg@arcticprint.gl">salg@arcticprint.gl</a></div></div>
       <div class="c-row"><div class="c-icon">🔧</div><div><strong>Service</strong><a href="mailto:service@arcticprint.gl">service@arcticprint.gl</a></div></div>
       <div class="c-row"><div class="c-icon">📘</div><div><strong>Facebook</strong><a href="https://www.facebook.com/arcticprintApS" target="_blank">facebook.com/arcticprintApS</a></div></div>
     </div>
+    <!-- --- Kontaktformular --- -->
     <div>
       <form class="contact-form" action="https://formspree.io/f/xyeylvvd" method="POST">
+      <h3 class="mb-1">Kontaktformular</h3>
       <p class="form-text">Har du et spørgsmål eller brug for hjælp? Udfyld felterne herunder, så svarer vi hurtigst muligt.</p>
         <div class="form-group">
           <label>
+            Dit navn:
+            <input type="text" name="name" required>
+          </label>
+        </div>
+         <div class="form-group">
+          <label>
             Din email:
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </label>
         </div>
         <div class="form-group">
@@ -248,12 +260,14 @@
             <textarea name="message"></textarea>
           </label>
         </div>
-        <input type="hidden" name="_language" value="da" />
-        <input type="text" name="_gotcha" style="display: none;" />
+        <input type="hidden" name="_subject" value="Kontaktformular - Arctic Print Solutions">
+        <input class="display-none" type="hidden" name="_language" value="da" />
+        <input type="text" name="_gotcha" class="display-none" />
 
-        <button class="form-button" type="submit">Send</button>
+        <button class="form-button" type="submit">Send besked</button>
       </form>
     </div>
+    <!-- --- Åbningstider --- -->
     <div>
       <div class="hours-box">
         <h3>Åbningstider</h3>
@@ -272,7 +286,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="f-brand">
-    <img src="nytlogo3.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
+    <img src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
     <span>Arctic Print Solutions</span>
   </div>
   <div class="f-links">
@@ -283,8 +297,8 @@
     <a href="betaling.html">Betalingsløsninger</a>
     <a href="web.html">Hjemmesider</a>
   </div>
-  <p>© 2025 Arctic Print Solutions &nbsp;·&nbsp; CVR: 43078380 &nbsp;·&nbsp; Naternaq 28, 3900 Nuuk, Grønland</p>
-  <p style="margin-top:6px;">Udviklet af Arctic Print Solutions</p>
+  <p>© Arctic Print Solutions &nbsp;·&nbsp; CVR: 43078380 &nbsp;·&nbsp; Naternaq 28, 3900 Nuuk, Grønland</p>
+  <p class="margin-top-6">Udviklet af Arctic Print Solutions</p>
 </footer>
 
 <script src="./assets/js/hwc.js"></script>
@@ -292,6 +306,8 @@
 <script src="./assets/js/topnav-active-link.js"></script>
 
 <script src="./assets/js/contact-form.js"></script>
+
+<script src="./assets/js/topnav-menu.js"></script>
 
 
 </body>

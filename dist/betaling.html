@@ -32,11 +32,11 @@
 </div>
 
 <nav class="navbar">
-  <a href="index.html" style="text-decoration:none; display:flex; align-items:center;">
-    <img class="logo-img" src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" style="height:52px;" onerror="this.style.display='none'">
+  <a href="index.html" class="text-decoration-none display-flex align-items-center">
+    <img class="logo-img" src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
     <span class="logo-text">Arctic Print Solutions</span>
   </a>
-  <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+  <button class="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links">
@@ -70,7 +70,7 @@
 
 <section class="showcase light">
   <div class="showcase-grid">
-    <div class="si cover"><img src="./assets/img/betaling1.jpeg" alt="Betalingsterminal" style="width:100%;height:320px;object-fit:cover;padding:0;"></div>
+    <div class="si cover"><img src="./assets/img/betaling1.jpeg" alt="Betalingsterminal" class="width-100p height-320 object-fit-cover padding-0"></div>
     <div class="st">
       <p class="section-tag">Moderne betalingsløsninger</p>
       <h2>Enkle og sikre betalinger til din virksomhed</h2>
@@ -88,11 +88,11 @@
   </div>
 </section>
 
-<section class="showcase white" style="padding-top:0;">
-  <div style="max-width:1080px; padding-top:72px;">
+<section class="showcase white">
+  <div class="max-width-1080 pt-28">
     <p class="section-tag">Løsninger</p>
     <h2 class="section-title">Betalingsløsninger til alle typer erhverv</h2>
-    <div class="feat-grid" style="margin-top:0;">
+    <div class="feat-grid">
       <div class="feat-card"><div class="feat-icon">🏪</div><h3>Butik & retail</h3><p>Faste og mobile terminaler til butikker. Hurtig afvikling og høj sikkerhed — godkendt til alle korttyper.</p></div>
       <div class="feat-card"><div class="feat-icon">🍽️</div><h3>Restaurant & café</h3><p>Mobile terminaler der tages med til bordet. Integration med bordbestillingssystemer og kvitteringsprinter.</p></div>
       <div class="feat-card"><div class="feat-icon">🌐</div><h3>Online betaling</h3><p>Sikre betalingsløsninger til webshops og online bestilling. Integration med de mest brugte platforme.</p></div>
@@ -120,20 +120,28 @@
     <div>
       <p class="section-tag">Kontakt</p>
       <h2 class="section-title">Vi er klar til at hjælpe</h2>
-      <p style="font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:28px;">Ring, skriv eller kig forbi vores showroom i Qinngorput — vi vender hurtigt tilbage.</p>
+      <p class="contact-text-style">Ring, skriv eller kig forbi vores showroom i Qinngorput — vi vender hurtigt tilbage.</p>
       <div class="c-row"><div class="c-icon">📍</div><div><strong>Adresse</strong><span>Naternaq 28 (Qinngorput), Postboks 1629, 3900 Nuuk</span></div></div>
       <div class="c-row"><div class="c-icon">📞</div><div><strong>Telefon</strong><a href="tel:+299388010">+299 38 80 10</a></div></div>
       <div class="c-row"><div class="c-icon">✉️</div><div><strong>Salg</strong><a href="mailto:salg@arcticprint.gl">salg@arcticprint.gl</a></div></div>
       <div class="c-row"><div class="c-icon">🔧</div><div><strong>Service</strong><a href="mailto:service@arcticprint.gl">service@arcticprint.gl</a></div></div>
       <div class="c-row"><div class="c-icon">📘</div><div><strong>Facebook</strong><a href="https://www.facebook.com/arcticprintApS" target="_blank">facebook.com/arcticprintApS</a></div></div>
     </div>
+    <!-- --- Kontaktformular --- -->
     <div>
       <form class="contact-form" action="https://formspree.io/f/xyeylvvd" method="POST">
+      <h3 class="mb-1">Kontaktformular</h3>
       <p class="form-text">Har du et spørgsmål eller brug for hjælp? Udfyld felterne herunder, så svarer vi hurtigst muligt.</p>
         <div class="form-group">
           <label>
+            Dit navn:
+            <input type="text" name="name" required>
+          </label>
+        </div>
+         <div class="form-group">
+          <label>
             Din email:
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </label>
         </div>
         <div class="form-group">
@@ -142,12 +150,14 @@
             <textarea name="message"></textarea>
           </label>
         </div>
-        <input type="hidden" name="_language" value="da" />
-        <input type="text" name="_gotcha" style="display: none;" />
+        <input type="hidden" name="_subject" value="Kontaktformular - Arctic Print Solutions">
+        <input class="display-none" type="hidden" name="_language" value="da" />
+        <input type="text" name="_gotcha" class="display-none" />
 
-        <button class="form-button" type="submit">Send</button>
+        <button class="form-button" type="submit">Send besked</button>
       </form>
     </div>
+    <!-- --- Åbningstider --- -->
     <div>
       <div class="hours-box">
         <h3>Åbningstider</h3>
@@ -166,7 +176,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="f-brand">
-    <img src="nytlogo3.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
+    <img src="./assets/logo/aps-logo.png" alt="Arctic Print Solutions" onerror="this.style.display='none'">
     <span>Arctic Print Solutions</span>
   </div>
   <div class="f-links">
@@ -177,8 +187,8 @@
     <a href="betaling.html">Betalingsløsninger</a>
     <a href="web.html">Hjemmesider</a>
   </div>
-  <p>© 2025 Arctic Print Solutions &nbsp;·&nbsp; CVR: 43078380 &nbsp;·&nbsp; Naternaq 28, 3900 Nuuk, Grønland</p>
-  <p style="margin-top:6px;">Udviklet af Arctic Print Solutions</p>
+  <p>© Arctic Print Solutions &nbsp;·&nbsp; CVR: 43078380 &nbsp;·&nbsp; Naternaq 28, 3900 Nuuk, Grønland</p>
+  <p class="margin-top-6">Udviklet af Arctic Print Solutions</p>
 </footer>
 
 <script src="./assets/js/hwc.js"></script>
@@ -186,6 +196,8 @@
 <script src="./assets/js/topnav-active-link.js"></script>
 
 <script src="./assets/js/contact-form.js"></script>
+
+<script src="./assets/js/topnav-menu.js"></script>
 
 
 </body>
