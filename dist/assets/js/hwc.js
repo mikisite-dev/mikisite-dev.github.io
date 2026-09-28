@@ -3,7 +3,7 @@
       if (!stage) return;
       var slots = stage.querySelectorAll('.hwc-slot');
       var data = [
-          { href: 'kopi-print.html', src: './assets/img/printers/ecosysp2040dn.jpg', caption: 'Kopi, Print & Scan' },
+          { href: 'kopi-print.html', src: './assets/img/printers/ecosysp2040dn.webp', caption: 'Kopi, Print & Scan' },
    { href: 'av.html', src: './assets/img/av-moderum-skaerm-hero.jpg', caption: 'AV & Møderumslösninger' },
    { href: 'lyd.html', src: './assets/img/lyd-hoejtaler.jpg', caption: 'Lydanlæg & Højtalere' },
    { href: 'akustik.html', src: './assets/img/akustik-kontor.webp', caption: 'Akustikregulering' },
