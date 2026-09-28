@@ -329,12 +329,6 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-    .topbar { flex-direction: column; text-align: center; }
-    .navbar { padding: 0 20px; }
-    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--blue); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
-    .nav-links.open { display: flex; }
-    .nav-links a { padding: 14px 24px; border-bottom: 1px solid var(--ice); }
-    .hamburger { display: flex; }
     .hero-content { padding: 52px 24px; }
     .hero h1 { font-size: 36px; }
     .hero-pills { display: none; }
@@ -369,14 +363,19 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
     .hwc-label { margin-bottom: 10px; font-size: 12px; }
     .hwc-caption { font-size: 11px; padding: 6px 8px 5px; }
 }
-@media (max-width: 900px) {
-    .hero-work-card { display: none; }
+
+/*--- TOPBAR/NAVBAR ---*/
+@media (max-width:1300px) {
     .topbar { flex-direction: column; text-align: center; }
     .navbar { padding: 0 20px; }
     .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--blue); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
     .nav-links.open { display: flex; }
     .nav-links a { padding: 14px 24px; border-bottom: 1px solid var(--ice); }
     .hamburger { display: flex; }
+}
+
+@media (max-width: 900px) {
+    .hero-work-card { display: none; }
     .page-hero-content { padding: 36px 24px 32px; }
     .page-hero h1 { font-size: 28px; }
     .showcase, .products-section, .contact-mini { padding: 48px 20px; }
