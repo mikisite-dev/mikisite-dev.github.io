@@ -27,7 +27,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 /* ── NAV ── */
 .navbar { background: rgba(255,255,255,.97); backdrop-filter: blur(10px); border-bottom: 2.5px solid var(--blue); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; position: sticky; top: 0; z-index: 200; }
 .logo-img { height: 48px; display: block; }
-.logo-text { font-family: serif; font-size: 20px; color: var(--blue); display: none; }
+.logo-text { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 20px; color: var(--blue); display: none; }
 .nav-links { display: flex; }
 .nav-links a { padding: 20px 15px; font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--text); text-decoration: none; border-bottom: 3px solid transparent; transition: color .2s, border-color .2s; white-space: nowrap; }
 .nav-links a:hover, .nav-links a.active { color: var(--blue); border-bottom-color: var(--blue); }
@@ -68,9 +68,12 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 }
 .hero-content { position: relative; z-index: 2; padding: 80px 56px; max-width: 680px; }
 .hero-eyebrow { display: inline-block; background: var(--blue-lt); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-top: 12px; margin-bottom: 22px; }
-.hero h1 { font-family: serif; font-size: 52px; color: #fff; line-height: 1.1; margin-bottom: 20px; }
+.hero h1 { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 52px; color: #fff; line-height: 1.1; margin-bottom: 20px; }
 .hero h1 em { font-style: italic; color: var(--sky); }
-.hero-sub { font-size: 17px; color: rgba(255,255,255,.7); line-height: 1.75; margin-bottom: 36px; max-width: 500px; }
+.hero-sub { font-size: 17px; color: rgba(255,255,255,.7); line-height: 1.75; margin-bottom: 36px; max-width: 500px; background: linear-gradient(165deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
+    padding: 6px 12px;
+    border-radius: 14px;
+    text-align: justify; }
 .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
 .btn-blue { display: inline-block; background: var(--blue); color: #fff; padding: 13px 30px; font-size: 14px; font-weight: 700; text-decoration: none; border-radius: 4px; letter-spacing: .04em; transition: background .2s, transform .15s; }
 .btn-blue:hover { background: var(--blue-lt); transform: translateY(-1px); }
@@ -131,7 +134,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .si { border-radius: 12px; overflow: hidden; border: 1px solid var(--mid); background: var(--ice); display: flex; align-items: center; justify-content: center; min-height: 280px; }
 .si img { max-width: 100%; max-height: 320px; object-fit: contain; padding: 20px; }
 .si.cover img { width: 100%; height: 320px; object-fit: cover; padding: 0; }
-.st h2 { font-family: serif; font-size: 26px; margin-bottom: 14px; line-height: 1.3; color: var(--dark); }
+.st h2 { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 26px; margin-bottom: 14px; line-height: 1.3; color: var(--dark); }
 .st p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 14px; }
 .check-list { list-style: none; margin-bottom: 24px; }
 .check-list li { font-size: 14.5px; color: var(--text); padding: 7px 0 7px 22px; position: relative; border-bottom: 1px solid var(--ice); }
@@ -188,7 +191,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 
 /* ── SECTIONS ── */
 .section-tag { font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
-.section-title { font-family: serif; font-size: 32px; line-height: 1.2; margin-bottom: 14px; color: var(--dark); }
+.section-title { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 32px; line-height: 1.2; margin-bottom: 14px; color: var(--dark); }
 .section-lead { font-size: 15.5px; color: var(--muted); line-height: 1.8; max-width: 620px; margin-bottom: 44px; text-align: justify;}
 
 /* ── SERVICES GRID ── */
@@ -208,7 +211,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .browser-frame img { flex: 1; width: 100%; height: auto; object-fit: cover; object-position: top; }
 .svc-card-body { padding: 24px 26px 28px; flex: 1; display: flex; flex-direction: column; }
 .svc-card-tag { font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
-.svc-card-body h3 { font-family: serif; font-size: 20px; margin-bottom: 10px;  }
+.svc-card-body h3 { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 20px; margin-bottom: 10px;  }
 .svc-card-body p { font-size: 14px; line-height: 1.7; margin-bottom: 18px; flex: 1; }
 .svc-link { font-size: 12.5px; font-weight: 700; color: var(--blue); text-decoration: none; text-transform: uppercase; letter-spacing: .08em; }
 .svc-link:hover { text-decoration: underline; }
@@ -235,7 +238,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .brand-strip { padding: 56px 40px; background: var(--ice); text-align: center; }
 .brand-strip h3 { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
 .brand-pills { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
-.brand-pill { background: var(--white); border: 1px solid var(--mid); border-radius: 40px; padding: 10px 26px; font-family: serif; font-size: 17px; color: var(--dark); }
+.brand-pill { background: var(--white); border: 1px solid var(--mid); border-radius: 40px; padding: 10px 26px; font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 17px; color: var(--dark); }
 .brand-strip p { font-size: 14px; color: var(--muted); max-width: 620px; margin: 0 auto; line-height: 1.7; }
 
 /* --- videowrap --- */
@@ -249,8 +252,8 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 .price-card.featured { border: 2px solid var(--blue); position: relative; }
 .price-badge { position: absolute; top: -12px; left: 22px; background: var(--blue); color: #fff; font-size: 10.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 4px 12px; border-radius: 3px; }
 .price-card h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
-.price-amount { font-family: serif; font-size: 30px; color: var(--blue); margin-bottom: 4px; }
-.price-amount span { font-size: 13px; color: var(--muted); font-family: sans-serif; font-weight: 400; }
+.price-amount { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 30px; color: var(--blue); margin-bottom: 4px; }
+.price-amount span { font-size: 13px; color: var(--muted); font-family: var(--system-ui); font-weight: 400; }
 .price-card .price-lead { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; min-height: 38px; }
 .price-list { list-style: none; margin-bottom: 20px; flex-grow: 1; }
 .price-list li { font-size: 12.5px; color: var(--text); padding: 5px 0 5px 18px; position: relative; line-height: 1.5; }
@@ -263,7 +266,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
     justify-content: center;}
 .book-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; max-width: 1080px; align-items: flex-start; }
 .book-info .section-tag { color: var(--sky); }
-.book-info h2 { font-family: serif; font-size: 28px; color: #fff; margin-bottom: 16px; line-height: 1.3; }
+.book-info h2 { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 28px; color: #fff; margin-bottom: 16px; line-height: 1.3; }
 .book-info p { font-size: 14.5px; color: rgba(255,255,255,.65); line-height: 1.8; margin-bottom: 16px; }
 .book-steps { list-style: none; counter-reset: step; margin-top: 20px; }
 .book-steps li { counter-increment: step; font-size: 13.5px; color: rgba(255,255,255,.75); padding: 8px 0 8px 34px; position: relative; border-bottom: 1px solid rgba(255,255,255,.1); }
@@ -292,7 +295,7 @@ input[type="date"] {
 
 /* ── CTA BAND ── */
 .cta-band { background: var(--blue); padding: 56px; display: flex; align-items: center; justify-content: space-evenly; gap: 24px; flex-wrap: wrap; }
-.cta-band h2 { font-family: serif; font-size: 28px; color: #fff; line-height: 1.3; }
+.cta-band h2 { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 28px; color: #fff; line-height: 1.3; }
 .cta-band p { font-size: 15px; color: rgba(255,255,255,.78); margin-top: 6px; }
 .btn-white { display: inline-block; background: #fff; color: var(--blue); padding: 14px 32px; font-size: 14px; font-weight: 700; text-decoration: none; border-radius: 4px; letter-spacing: .04em; white-space: nowrap; transition: background .2s, transform .15s; }
 .btn-white:hover { background: var(--ice); transform: translateY(-1px); }
@@ -322,7 +325,7 @@ input[type="date"] {
 footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: center; padding: 32px 40px; font-size: 12.5px; }
 .f-brand { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 14px; }
 .f-brand img { height: 30px; filter: brightness(0) invert(1); opacity: .5; }
-.f-brand span { font-family: serif; font-size: 17px; color: rgba(255,255,255,.55); }
+.f-brand span { font-family: Georgia, "Noto Serif", "Times New Roman", serif; font-size: 17px; color: rgba(255,255,255,.55); }
 .f-links { margin-bottom: 12px; }
 .f-links a { color: rgba(255,255,255,.45); text-decoration: none; margin: 0 10px; font-size: 12.5px; }
 .f-links a:hover { color: #fff; }
