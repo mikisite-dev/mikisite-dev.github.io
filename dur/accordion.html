@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <a href="index.html" class="home-link">
+            <h1>Helle<br><span>K</span>och Jense<span>N</span></h1>
+        </a>
+        <nav class="navbar-accordion">
+            <button class="accordion">Menu / Rum</button>
+            <div class="panel">
+                <a class="nav-link display-block" href="rum1.html">det første rum</a>
+                <a class="nav-link display-block" href="rum2.html">det andet rum</a>
+                <a class="nav-link display-block" href="accordion.html">det tredje rum</a>
+            </div>
+        </nav>
+        <h2>det tredje rum</h2>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aspernatur ipsum, esse et
+            officiis error ullam tempora quo quod eos quae similique voluptas labore quasi repudiandae enim saepe fugit
+            blanditiis.</p>
+        <img src="assets/pexels-tommes-frites-1141358642-30990505.webp" width="718px" height="479px" loading="lazy" class="billede" alt="calm meadow" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum sequi, ex consequatur voluptate quod
+            illum architecto explicabo a. Tempore eos cum commodi quas labore, omnis sint animi aut blanditiis.</p>
+        <hr class="mt-3">
+        <footer>
+            <div class="footer-contact">
+                <p>E-mail: adresse@her.com</p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="facebook-link"><img src="assets/facebook-svgrepo-com.svg" alt="facebook logo"
+                        class="facebook-link-logo"> Det
+                    Universelle Rum</a>
+            </div>
+            <p class="mt-3"><small>&copy; 2026 Helle Koch Jensen</small></p>
+        </footer>
+    </main>
+
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
