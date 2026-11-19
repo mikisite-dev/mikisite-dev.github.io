@@ -15,6 +15,28 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--system-ui); background: var(--white); color: var(--text); }
 
+.lang-flag {
+    width: auto;
+    max-width: 22px;
+    margin: 0 0 0 6px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
 .center-content {
     max-width: 1334px;
 }
@@ -598,7 +620,8 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
 }
 
 .h3-contact-svc-card {
-    color:#fff; font-size:22px; margin-bottom-14px;
+    color:#fff; font-size:22px; 
+    margin-bottom: 14px;
 }
 
 .p-contact-svc-card {
