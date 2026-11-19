@@ -352,6 +352,16 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
 .f-links a { color: rgba(255,255,255,.45); text-decoration: none; margin: 0 10px; font-size: 12.5px; }
 .f-links a:hover { color: #fff; }
 
+.mikisite-link {
+    color: gray;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mikisite-link:hover {
+    color: aqua;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
     .hero-content { padding: 52px 24px; }
