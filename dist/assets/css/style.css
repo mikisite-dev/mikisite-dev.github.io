@@ -17,7 +17,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
 
 .lang-flag {
     width: auto;
-    max-width: 22px;
+    max-width: 23px;
     margin: 0 0 0 6px;
 }
 
