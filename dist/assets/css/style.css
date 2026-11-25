@@ -19,6 +19,7 @@ body { font-family: var(--system-ui); background: var(--white); color: var(--tex
     width: auto;
     max-width: 23px;
     margin: 0 0 0 6px;
+    display: block;
 }
 
 .d-flex {
