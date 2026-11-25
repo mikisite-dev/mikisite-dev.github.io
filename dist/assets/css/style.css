@@ -354,9 +354,9 @@ footer { background: var(--dark); color: rgba(255,255,255,.4); text-align: cente
 .f-links a:hover { color: #fff; }
 
 .mikisite-link {
-    color: gray;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+    color: rgba(255,255,255,.4);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .mikisite-link:hover {
